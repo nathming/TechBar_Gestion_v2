@@ -33,10 +33,29 @@ namespace TechBar_Gestion_v2
         {
             InitializeComponent();
 
+            Grid_Log.Visibility = Visibility.Visible; //show login page to begin
+            Grid_MenuU.Visibility = Visibility.Hidden;
+        }
+
+        private void BTN_LogIn_Click(object sender, RoutedEventArgs e) //we can use this button to login
+        {
+            Grid_Log.Visibility = Visibility.Hidden; //show login page to begin
+            Grid_MenuU.Visibility = Visibility.Visible;
+
             Grid_RFID.Children.Clear(); //permet de se rendre sur les utilisateur au lancement de l'application
             PageUsers pageusers = new PageUsers();
             Grid_RFID.Children.Add(pageusers);
         }
+
+        private void BTN_LogOut_Click(object sender, RoutedEventArgs e) //we can use this button to login
+        {
+            Grid_RFID.Children.Clear(); //vide la paga de son contenu
+
+            Grid_Log.Visibility = Visibility.Visible; //show login page to begin
+            Grid_MenuU.Visibility = Visibility.Hidden;
+
+        }
+
 
         private void BTN_Nav_RFID_Click(object sender, RoutedEventArgs e) //renvoit a la page RFID
         {
@@ -58,5 +77,7 @@ namespace TechBar_Gestion_v2
             PageStorage pagestorage = new PageStorage();
             Grid_RFID.Children.Add(pagestorage);
         }
+
+        
     }
 }

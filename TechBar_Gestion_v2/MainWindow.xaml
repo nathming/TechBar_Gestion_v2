@@ -21,7 +21,7 @@
         </Grid.ColumnDefinitions>
 
         <Border Background="{StaticResource BaseColor}" CornerRadius="0 50 0 0">
-            <Grid Grid.Column="0">
+            <Grid Grid.Column="0" x:Name="Grid_MenuU">
                 <!--Uc selector-->
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
@@ -29,7 +29,7 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <Label Content="Gestion"/>
+                <!--Button-->
 
                 <StackPanel Orientation="Vertical" Grid.Row="1">
 
@@ -56,11 +56,51 @@
 
                 </StackPanel>
 
+                <Button x:Name="BTN_logout" Grid.Row="2" Style="{StaticResource MenuButton}" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="BTN_LogOut_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Icon:PackIconMaterial Kind="Logout" VerticalAlignment="Center" Width="25" Height="25"/>
+                        <Label Content="Quitter" Foreground="#e2e2e2"/>
+                    </StackPanel>
+                </Button>
 
             </Grid>
         </Border>
+        
+        <!--Loginpage-->
+        
+        <Grid x:Name="Grid_RFID" Grid.Column="1">
+            
+        </Grid>
+        
+        <Grid x:Name="Grid_Log" Grid.Column="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
 
-        <Grid x:Name="Grid_RFID" Grid.Column="1"/>
+                <StackPanel Orientation="Horizontal" Grid.Row="1">
+                    <Label Content="Nom d'utilisateur : " Style="{StaticResource LabelBase}" Height="70"/>
+                    <TextBox x:Name="TB_LogIn" Style="{StaticResource BaseTB}" Width="550"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="2">
+                    <Label Content="Mot de Passe : " Style="{StaticResource LabelBase}" Height="70"/>
+                    <TextBox x:Name="TB_Passwd" Style="{StaticResource BaseTB}" Width="550"/>
+                </StackPanel>
+
+                <Button x:Name="BTN_LogIn" Style="{StaticResource BaseButton}" Height="80" Click="BTN_LogIn_Click" Grid.Row="3">
+                    <StackPanel Orientation="Horizontal">
+                        <Icon:PackIconMaterial Kind="Login" VerticalAlignment="Center" Width="25" Height="25"/>
+                        <Label Content="Log in" Foreground="#e2e2e2" FontSize="30"/>
+                    </StackPanel>
+                </Button>
+
+            </Grid>
+        </Grid>
 
 
     </Grid>

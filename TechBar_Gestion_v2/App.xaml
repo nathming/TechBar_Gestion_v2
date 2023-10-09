@@ -101,6 +101,17 @@
             </Setter>
         </Style>
 
+        <Style x:Key="BaseTB" TargetType="TextBox">
+            <Setter Property="Background" Value="{StaticResource BaseColor}"/>
+            <Setter Property="Foreground" Value="#ffffff"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Margin" Value="20"/>
+            <Setter Property="Height" Value="70"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="TextAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+
         <!--datagrid-->
         
         <Style x:Key="DatagridButton" TargetType="Button">

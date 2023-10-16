@@ -110,7 +110,15 @@
                         <Label Content="Description" Style="{StaticResource PopUp_LB}"/>
                         <TextBox x:Name="TB_Description" Width="150" Style="{StaticResource searchTextbox}"/>
                     </StackPanel>
-                    
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Prix" Style="{StaticResource PopUp_LB}"/>
+                        <TextBox x:Name="TB_Price" Width="150" Style="{StaticResource searchTextbox}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Stock" Style="{StaticResource PopUp_LB}"/>
+                        <TextBox x:Name="TB_Stock" Width="150" Style="{StaticResource searchTextbox}"/>
+                    </StackPanel>
+
                     <StackPanel Orientation="Horizontal">
                         <Button Style="{StaticResource BaseButton}" Content="Annuler" Click="BTN_add_Cancel"></Button>
                         <Button Style="{StaticResource BaseButton}" Content="Confirmer" Click="BTN_add_Confirm"></Button>

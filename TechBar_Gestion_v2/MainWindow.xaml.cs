@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 using TechBar_Gestion_v2.View.ViewRFID;
 using TechBar_Gestion_v2.View.ViewUsers;
 using TechBar_Gestion_v2.View.ViewStorage;
+using TechBar_Gestion_v2.View.ViewRecord;
 
 namespace TechBar_Gestion_v2
 {
@@ -33,28 +34,11 @@ namespace TechBar_Gestion_v2
         {
             InitializeComponent();
 
-            Grid_Log.Visibility = Visibility.Visible; //show login page to begin
-            Grid_MenuU.Visibility = Visibility.Hidden;
-        }
-
-        private void BTN_LogIn_Click(object sender, RoutedEventArgs e) //we can use this button to login
-        {
-            Grid_Log.Visibility = Visibility.Hidden; //show login page to begin
-            Grid_MenuU.Visibility = Visibility.Visible;
-
-            Grid_RFID.Children.Clear(); //permet de se rendre sur les utilisateur au lancement de l'application
+            Grid_RFID.Children.Clear();
             PageUsers pageusers = new PageUsers();
             Grid_RFID.Children.Add(pageusers);
         }
 
-        private void BTN_LogOut_Click(object sender, RoutedEventArgs e) //we can use this button to login
-        {
-            Grid_RFID.Children.Clear(); //vide la paga de son contenu
-
-            Grid_Log.Visibility = Visibility.Visible; //show login page to begin
-            Grid_MenuU.Visibility = Visibility.Hidden;
-
-        }
 
 
         private void BTN_Nav_RFID_Click(object sender, RoutedEventArgs e) //renvoit a la page RFID
@@ -78,6 +62,20 @@ namespace TechBar_Gestion_v2
             Grid_RFID.Children.Add(pagestorage);
         }
 
-        
+
+        private void BTN_Nav_Record_All_Click(object sender, RoutedEventArgs e)
+        {
+            Grid_RFID.Children.Clear();
+            PageRecAll pagerecall = new PageRecAll();
+            Grid_RFID.Children.Add(pagerecall);
+        }
+
+        private void BTN_Nav_Record_rfid_Click(object sender, RoutedEventArgs e)
+        {
+            Grid_RFID.Children.Clear();
+            PageRecRFID pagerecrfid = new PageRecRFID();
+            Grid_RFID.Children.Add(pagerecrfid);
+        }
+
     }
 }

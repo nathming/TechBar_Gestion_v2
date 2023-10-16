@@ -253,6 +253,12 @@
     <Compile Include="RFID\LecteurRfid.cs" />
     <Compile Include="Service\DAO_Beer.cs" />
     <Compile Include="Service\DAO_User.cs" />
+    <Compile Include="View\ViewRecord\PageRecAll.xaml.cs">
+      <DependentUpon>PageRecAll.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewRecord\PageRecRFID.xaml.cs">
+      <DependentUpon>PageRecRFID.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\ViewRFID\PageRFID.xaml.cs">
       <DependentUpon>PageRFID.xaml</DependentUpon>
     </Compile>
@@ -274,6 +280,14 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\ViewRecord\PageRecAll.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ViewRecord\PageRecRFID.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\ViewRFID\PageRFID.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

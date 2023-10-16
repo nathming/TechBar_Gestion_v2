@@ -357,3 +357,7 @@ C:\Users\SLAB96\Desktop\TechBar_Gestion_v2\TechBar_Gestion_v2\obj\Debug\TechBar_
 C:\Users\SLAB96\Desktop\TechBar_Gestion_v2\TechBar_Gestion_v2\obj\Debug\TechBar_Gestion_v2.csproj.CopyComplete
 C:\Users\SLAB96\Desktop\TechBar_Gestion_v2\TechBar_Gestion_v2\obj\Debug\TechBar_Gestion_v2.exe
 C:\Users\SLAB96\Desktop\TechBar_Gestion_v2\TechBar_Gestion_v2\obj\Debug\TechBar_Gestion_v2.pdb
+C:\Users\SLAB96\Desktop\TechBar_Gestion_v2\TechBar_Gestion_v2\obj\Debug\View\ViewRecord\PageRecAll.g.cs
+C:\Users\SLAB96\Desktop\TechBar_Gestion_v2\TechBar_Gestion_v2\obj\Debug\View\ViewRecord\PageRecRFID.g.cs
+C:\Users\SLAB96\Desktop\TechBar_Gestion_v2\TechBar_Gestion_v2\obj\Debug\View\ViewRecord\PageRecAll.baml
+C:\Users\SLAB96\Desktop\TechBar_Gestion_v2\TechBar_Gestion_v2\obj\Debug\View\ViewRecord\PageRecRFID.baml

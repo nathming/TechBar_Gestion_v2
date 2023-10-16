@@ -123,6 +123,8 @@ namespace TechBar_Gestion_v2.View.ViewStorage
                 {
                     Nom = TB_Name.Text,
                     Description = TB_Description.Text,
+                    Price = int.Parse(TB_Price.Text),
+                    Stock = int.Parse(TB_Stock.Text)
                 };
 
                 dao_beer.FX_AddBeer(beer);
@@ -131,6 +133,8 @@ namespace TechBar_Gestion_v2.View.ViewStorage
 
                 TB_Description.Text = "";
                 TB_Name.Text = "";
+                TB_Price.Text = "";
+                TB_Stock.Text = "";
             }
             catch
             {

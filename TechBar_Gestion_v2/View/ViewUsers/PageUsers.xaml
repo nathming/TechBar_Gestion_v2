@@ -129,11 +129,18 @@
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
                         <Label Content="RFIDNumber" Style="{StaticResource PopUp_LB}"/>
+                        <Button Margin="5 0 0 0" Click="Click_BTN_rfidcontact" Style="{StaticResource DatagridButton}">
+                            <Icon:PackIconMaterial Kind="CardMultipleOutline"/>
+                        </Button>
                         <TextBox x:Name="TB_RFIDNumber" Width="150" Style="{StaticResource searchTextbox}"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
                         <Label Content="Email" Style="{StaticResource PopUp_LB}"/>
                         <TextBox x:Name="TB_Email" Width="150" Style="{StaticResource searchTextbox}"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Crédit" Style="{StaticResource PopUp_LB}"/>
+                        <TextBox x:Name="TB_Credit" Width="150" Style="{StaticResource searchTextbox}"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal">

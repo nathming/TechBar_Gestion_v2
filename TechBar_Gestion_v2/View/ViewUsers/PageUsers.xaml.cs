@@ -129,7 +129,11 @@ namespace TechBar_Gestion_v2.View.ViewUsers
             }
             catch
             {
-
+                try
+                {
+                    TB_RFIDNumber.Text = rfid.GetCardID();
+                }
+                catch { }
             }
 
             
@@ -163,7 +167,8 @@ namespace TechBar_Gestion_v2.View.ViewUsers
                     Name = TB_Name.Text,
                     LastName = TB_LastName.Text,
                     Email = TB_Email.Text,
-                    Rfidnumber = TB_RFIDNumber.Text
+                    Rfidnumber = TB_RFIDNumber.Text,
+                    Credit = int.Parse(TB_Credit.Text)
                 };
 
                 dao_user.FX_AddUser(us);
@@ -174,6 +179,7 @@ namespace TechBar_Gestion_v2.View.ViewUsers
                 TB_LastName.Text = "";
                 TB_Name.Text = "";
                 TB_RFIDNumber.Text = "";
+                TB_Credit.Text = "";
             }
             catch
             {

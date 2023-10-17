@@ -91,7 +91,7 @@ namespace TechBar_Gestion_v2.RFID
         {
             bConnectedDevice = false;
             baud = 19200;
-            this.port = 6; //ici on selectionne le port
+            //this.port = 6; //ici on selectionne le port
             // this.port = portRfid; // port RFID connection 
             /*this.port = 9;
             baud = 19200;
@@ -202,7 +202,13 @@ namespace TechBar_Gestion_v2.RFID
         public string GetCardID()
         {
 
-            int status = lireIdentifiantCarte();
+            int status = 1; //Fonction permetant la détéction automatique du port série
+            for (int i=1; (status == 1 || status == 2 & i <= 9); i++) //détecte le port série utilisé, et si il y en a pas sort la bonne erreur
+            {
+                this.port = i;
+                status = lireIdentifiantCarte();
+            }
+
             string statusMsg = null;
             switch (status)
             {

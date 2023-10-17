@@ -16,7 +16,6 @@ using System.Windows.Shapes;
 using TechBar_Gestion_v2.View.ViewRFID;
 using TechBar_Gestion_v2.View.ViewUsers;
 using TechBar_Gestion_v2.View.ViewStorage;
-using TechBar_Gestion_v2.View.ViewRecord;
 
 namespace TechBar_Gestion_v2
 {
@@ -62,20 +61,6 @@ namespace TechBar_Gestion_v2
             Grid_RFID.Children.Add(pagestorage);
         }
 
-
-        private void BTN_Nav_Record_All_Click(object sender, RoutedEventArgs e)
-        {
-            Grid_RFID.Children.Clear();
-            PageRecAll pagerecall = new PageRecAll();
-            Grid_RFID.Children.Add(pagerecall);
-        }
-
-        private void BTN_Nav_Record_rfid_Click(object sender, RoutedEventArgs e)
-        {
-            Grid_RFID.Children.Clear();
-            PageRecRFID pagerecrfid = new PageRecRFID();
-            Grid_RFID.Children.Add(pagerecrfid);
-        }
 
     }
 }

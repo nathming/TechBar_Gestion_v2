@@ -54,19 +54,6 @@
                         </StackPanel>
                     </Button>
 
-                    <Button Name="BTN_Nav_Record_rfid" Style="{StaticResource MenuButton}" Click="BTN_Nav_Record_rfid_Click">
-                        <StackPanel Orientation="Horizontal">
-                            <Icon:PackIconMaterial Kind="FilmstripBoxMultiple" VerticalAlignment="Center" Width="25" Height="25"/>
-                            <Label Content="opération RFID" Foreground="#e2e2e2"/>
-                        </StackPanel>
-                    </Button>
-
-                    <Button Name="BTN_Nav_Record_All" Style="{StaticResource MenuButton}" Click="BTN_Nav_Record_All_Click">
-                        <StackPanel Orientation="Horizontal">
-                            <Icon:PackIconMaterial Kind="Film" VerticalAlignment="Center" Width="25" Height="25"/>
-                            <Label Content="opération" Foreground="#e2e2e2"/>
-                        </StackPanel>
-                    </Button>
 
                 </StackPanel>
 
